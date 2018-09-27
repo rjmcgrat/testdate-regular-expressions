@@ -1,0 +1,21 @@
+Part II:  Regular Expressions (40 points)
+
+Write a Python program testdate.py that uses a regular expression to test whether a text file contains a valid date in numerical notation. If it does contain a valid date, output the date in a "standard" format "yyyy/mm/dd" (yyyy is between 1919 and 2018). The program accepts one or more file names as command line arguments and prints basic usage information when provided with no arguments. Examples for valid dates include "3/30/18", "3/30/2018", "3-30-2018", "03-30-2018", "30.3.2018", "30. 3. 2018", and "2018-03-30". Your program should detect these formats but do not need to consider other variations. At the same time, it should have as few false positives as possible, for example, not treating "33018", "03302018", or "30-30-18" as dates. Note that if a text file contains a valid date, it may still contain other arbitrary text.
+
+To simplify testing, here is an example of testdate.py in action:
+
+ > ./testdate.py
+
+testdate.py by John Cloft
+
+Usage: testdate.py file ...
+
+ > ./testdate.py file1 file2
+
+testdate.py by John Cloft
+
+file1: contains dates 2018/06/28 2018/11/17
+
+file2: does not contain dates
+
+>
